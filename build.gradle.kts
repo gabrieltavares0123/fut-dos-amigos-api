@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
 	id("org.springframework.boot") version "3.1.5"
@@ -25,8 +26,9 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("io.springfox:springfox-boot-starter:3.0.0")
 	implementation("org.slf4j:slf4j-api:2.0.9")
+
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
 
 	//implementation("io.jsonwebtoken:jjwt-api:0.12.3")
 	//implementation("org.springframework.boot:spring-boot-starter-security")
